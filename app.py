@@ -6,7 +6,7 @@ CORS(app)
 
 @app.route("/")
 def hello():
-    return "Hello from Upadhye ECS Container!"
+    return "Hello from Sandhu ECS Container!"
 
 @app.route("/health")
 def health():
