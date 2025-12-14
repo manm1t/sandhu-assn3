@@ -15,8 +15,8 @@ phases:
   build:
     commands:
       - echo Building Docker image...
-      - docker build -t app:$IMAGE_TAG .
-      - docker tag app:$IMAGE_TAG $ECR_URI:$IMAGE_TAG
+      - docker build -t sandhu-app:$IMAGE_TAG .
+      - docker tag sandhu-app:$IMAGE_TAG $ECR_URI:$IMAGE_TAG
 
   post_build:
     commands:
