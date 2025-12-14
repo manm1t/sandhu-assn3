@@ -23,7 +23,7 @@ phases:
       - echo Pushing Docker image to ECR...
       - docker push $ECR_URI:$IMAGE_TAG
       - echo Creating imagedefinitions.json file...
-      - printf '[{"name":"app","imageUri":"%s"}]' "$ECR_URI:$IMAGE_TAG" > imagedefinitions.json
+      - printf '[{"name":"sandhu-app","imageUri":"%s"}]' "$ECR_URI:$IMAGE_TAG" > imagedefinitions.json
 
 artifacts:
   files:
